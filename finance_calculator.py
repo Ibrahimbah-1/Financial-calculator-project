@@ -1,7 +1,7 @@
 def loan_payment():
-    principal = float(input("Enter loan amount: "))
-    rate = float(input("Enter annual interest rate (%): "))
-    years = int(input("Enter loan term (years): "))
+    principal = float(input("Please Enter loan amount: "))
+    rate = float(input("Please Enter annual interest rate (%): "))
+    years = int(input("Please Enter loan term (years): "))
 
     monthly_rate = rate / 12 / 100
     months = years * 12
@@ -11,9 +11,9 @@ def loan_payment():
 
 
 def compound_interest():
-    principal = float(input("Enter initial investment: "))
-    rate = float(input("Enter annual interest rate (%): "))
-    years = int(input("Enter number of years: "))
+    principal = float(input(" Please Enter initial investment: "))
+    rate = float(input("Please Enter annual interest rate (%): "))
+    years = int(input("Please Enter number of years: "))
 
     amount = principal + (principal * rate * years / 100)
 
@@ -21,9 +21,9 @@ def compound_interest():
 
 
 def savings_growth():
-    initial = float(input("Enter initial savings amount: "))
-    monthly = float(input("Enter monthly contribution: "))
-    years = int(input("Enter number of years: "))
+    initial = float(input("Please Enter initial savings amount: "))
+    monthly = float(input("Please Enter monthly contribution: "))
+    years = int(input("Please Enter number of years: "))
 
     total = initial + (monthly * 12 * years)
 
